@@ -1,0 +1,9 @@
+p:first-child {
+    font-size: 16pt;
+    color: tomato;
+}
+
+p:nth-child(3) {
+    color: dodgerblue;
+    font-size: 2rem;
+}
