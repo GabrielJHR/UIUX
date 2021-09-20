@@ -1,0 +1,88 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: white;
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes{
+  display: flex;
+  background-color: #47CBAA; 
+  justify-content: flex-end;
+  padding:0em  2em;
+}
+
+.redes-icon{
+  font-size: 26pt;
+  color: white;
+  margin-left: 0.7em;
+}
+
+.redes a {
+  text-decoration: none;
+}
+
+nav{
+  padding: 0rem 2rem;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+nav > .logo > img{
+  height: 3rem;
+  width: auto;
+}
+
+nav .sobremi-link{
+  text-decoration: underline;
+  color: black;
+}
+
+header .container{
+  background: url(../img/Cover.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.contenido{
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.contenido  h3{
+  font-size: 22pt;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 7px;
+  color: white;
+  margin-bottom: 5rem;
+  text-shadow: 0px 0px 5px black;
+}
+
+
+
+.boton{
+  background-color: #47CBAA; 
+  color: black;
+  padding: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+}
