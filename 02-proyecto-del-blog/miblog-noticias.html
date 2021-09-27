@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="font/flaticon.css">
+	<meta charset="UTF-8">
+	<title>Mi Blog | Noticias</title>
+</head>
+
+<style>
+	* {
+		margin: 0%;
+		padding: 0%;
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+
+	.noticias-principales {
+		background-color: #E6E9ED;
+	}
+
+	.redes {
+		display: flex;
+		background-color: #47CBAA;
+		justify-content: flex-end;
+		padding: 0em 2em;
+	}
+
+	.redes-icon {
+		font-size: 26pt;
+		color: white;
+		margin-left: 0.7em;
+	}
+
+	.redes a {
+		text-decoration: none;
+	}
+
+	nav {
+		padding: 0rem 2rem;
+		display: flex;
+		height: 80px;
+		justify-content: space-between;
+		align-items: center;
+		background-color: white;
+	}
+
+	nav>.logo>img {
+		height: 3rem;
+		width: auto;
+	}
+
+	nav .sobremi-link {
+		text-decoration: underline;
+		color: black;
+	}
+
+
+	.boton {
+		color: black;
+		padding: 0.7rem;
+		font-weight: 600;
+		cursor: pointer;
+		border: solid 1px #47CBAA;
+	}
+
+	.noticias-principales {
+		padding: 2rem 6rem;
+	}
+
+	.noticia-principal {
+		margin-top: 1rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 3rem;
+	}
+
+	.noticia-principal img {
+		width: 100%;
+		height: auto;
+	}
+
+	.noticia-principal .contenido {
+		display: grid;
+		grid-template-rows: repeat(3, auto);
+		grid-row-gap: 1rem;
+	}
+
+	.ultimos-articulos{
+		padding: 2rem 6rem;
+	}
+
+	.ultimos-articulos > h4 {
+		margin-bottom: 1rem;
+	}
+
+	.ultimos-articulos img{
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	.ultimos-articulos .card-body{
+		padding: 1rem;
+	}
+
+	.card {
+		min-height: 400px;
+		border: 1px solid darkgrey;
+		min-width: 300px;
+	}
+
+	.card p{
+		margin: 1rem 0;
+	}
+
+	.ultimos-articulos .contenido {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 2rem;
+	}
+
+	footer {
+		text-align: center;
+		padding: 1rem;
+		background-color: #2A2B2F;
+	}
+</style>
+
+<body>
+	<header>
+		<div class="redes">
+			<a href="#" class="redes-icon"><i class="glyph-icon flaticon-001-facebook"></i></a>
+			<a href="#" class="redes-icon"><i class="glyph-icon flaticon-002-twitter"></i></a>
+			<a href="#" class="redes-icon"><i class="glyph-icon flaticon-008-youtube"></i></a>
+			<a href="#" class="redes-icon"><i class="glyph-icon flaticon-010-linkedin"></i></a>
+			<a href="#" class="redes-icon"><i class="glyph-icon flaticon-011-instagram"></i></a>
+		</div>
+
+		<nav>
+			<a class="logo" href="#"><img src="./img/Logo-negro.png" alt="logo"></a>
+			<a class="sobremi-link" href="#">Sobre mi</a>
+		</nav>
+	</header>
+
+	<section class="noticias-principales">
+		<h4>Noticias</h4>
+		<div class="noticia-principal">
+			<img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+				alt="">
+			<article>
+				<div>
+					<h2 class="titulo-noticia-principal">Titulo del blog</h2>
+				</div>
+				<div>
+					<p class="contenido">
+						Elit hic aut commodi quo nemo exercitationem. A animi nihil ipsam dolores accusamus
+						exercitationem
+						Odio magni impedit necessitatibus harum aperiam Laudantium ut quia quasi laudantium recusandae
+						officiis obcaecati? Maiores sint?
+					</p>
+				</div>
+				<button class="boton">Leer mas</button>
+			</article>
+		</div>
+	</section>
+
+	<section class="ultimos-articulos">
+		<h4>Ultimos blogposts</h4>
+		<div class="contenido">
+			<article class="card">
+				<div class="card-header card-header-img">
+					<img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
+				</div>
+				<div class="card-body">
+					<div class="titulo"><b>Titulo del blogposts</b></div>
+					<p>Sit cumque impedit fugiat sed adipisci! Ipsum fugiat ullam qui laboriosam eaque Amet facere repudiandae beatae enim esse, atque, sed Rerum id excepturi odit excepturi rem Recusandae illum praesentium architecto</p>
+					<button class="boton">Leer mas</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-header card-header-img">
+					<img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
+				</div>
+				<div class="card-body">
+					<div class="titulo"><b>Titulo del blogposts</b></div>
+					<p>Sit cumque impedit fugiat sed adipisci! Ipsum fugiat ullam qui laboriosam eaque Amet facere repudiandae beatae enim esse, atque, sed Rerum id excepturi odit excepturi rem Recusandae illum praesentium architecto</p>
+					<button class="boton">Leer mas</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-header card-header-img">
+					<img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
+				</div>
+				<div class="card-body">
+					<div class="titulo"><b>Titulo del blogposts</b></div>
+					<p>Sit id necessitatibus dolores voluptatum ex. Quo earum qui fuga id eius? Numquam dolorem ex commodi quam magni? Ut repellendus doloribus deleniti inventore natus! Eaque ratione ip</p>
+					<button class="boton">Leer mas</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-header card-header-img">
+					<img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
+				</div>
+				<div class="card-body">
+					<div class="titulo"><b>Titulo del blogposts</b></div>
+					<p>Sit cumque impedit fugiat sed adipisci! Ipsum fugiat ullam qui laboriosam eaque Amet facere repudiandae beatae enim esse, atque, sed Rerum id excepturi odit excepturi rem Recusandae illum praesentium architecto</p>
+					<button class="boton">Leer mas</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-header card-header-img">
+					<img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
+				</div>
+				<div class="card-body">
+					<div class="titulo"><b>Titulo del blogposts</b></div>
+					<p>Sit cumque impedit fugiat sed adipisci! Ipsum fugiat ullam qui laboriosam eaque Amet facere repudiandae beatae enim esse, atque, sed Rerum id excepturi odit excepturi rem Recusandae illum praesentium architecto</p>
+					<button class="boton">Leer mas</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-header card-header-img">
+					<img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
+				</div>
+				<div class="card-body">
+					<div class="titulo"><b>Titulo del blogposts</b></div>
+					<p>Sit cumque impedit fugiat sed adipisci! Ipsum fugiat ullam qui laboriosam eaque Amet facere repudiandae beatae enim esse, atque, sed Rerum id excepturi odit excepturi rem Recusandae illum praesentium architecto</p>
+					<button class="boton">Leer mas</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="card-header card-header-img">
+					<img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
+				</div>
+				<div class="card-body">
+					<div class="titulo"><b>Titulo del blogposts</b></div>
+					<p>Sit cumque impedit fugiat sed adipisci! Ipsum fugiat ullam qui laboriosam eaque Amet facere repudiandae beatae enim esse, atque, sed Rerum id excepturi odit excepturi rem Recusandae illum praesentium architecto</p>
+					<button class="boton">Leer mas</button>
+				</div>
+			</article>
+
+		</div>
+	</section>
+
+	<footer>
+		<p>Elit deleniti earum ea quas optio beatae obcaecati, accusamus. Accusantium</p>
+	</footer>
+
+</body>
+</html>
