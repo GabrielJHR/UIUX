@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="font/flaticon.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<meta charset="UTF-8">
+	<title>Mi Blog | Proyectos</title>
+</head>
+
+<style>
+	.presentacion {
+		padding: 2rem 6rem;
+		background-color: #E6E9ED;
+	}
+
+	.presentacion--contenido {
+		display: grid;
+		grid-template-columns: minmax(300px, 1fr) 2fr;
+		grid-auto-flow: row;
+		grid-column-gap: 2rem;
+	}
+
+	.presentacion--contenido img {
+		width: 100%;
+	}
+
+	.presentacion--contenido_texto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.presentacion--contenido_texto p {
+		margin-top: 1rem;
+	}
+
+	.proyectos {
+		padding: 2rem 6rem;
+	}
+
+	.proyectos--contenido {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 2rem;
+		margin: 1rem 0;
+	}
+
+	.proyecto--tarjeta-de-proyecto p {
+		margin: 1rem 0;
+	}
+</style>
+
+<body>
+	<div class="redes">
+		<a href="#" class="redes-icon"><i class="glyph-icon flaticon-001-facebook"></i></a>
+		<a href="#" class="redes-icon"><i class="glyph-icon flaticon-002-twitter"></i></a>
+		<a href="#" class="redes-icon"><i class="glyph-icon flaticon-008-youtube"></i></a>
+		<a href="#" class="redes-icon"><i class="glyph-icon flaticon-010-linkedin"></i></a>
+		<a href="#" class="redes-icon"><i class="glyph-icon flaticon-011-instagram"></i></a>
+	</div>
+
+	<nav>
+		<a class="logo" href="#"><img src="./img/Logo-negro.png" alt="logo"></a>
+		<a class="sobremi-link" href="#">Sobre mi</a>
+	</nav>
+
+	<section class="presentacion">
+		<div class="presentacion--contenido">
+			<img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+				alt="">
+			<div class="presentacion--contenido_texto">
+
+				<h2>Hola!</h2>
+				<p>Elit autem ut temporibus beatae atque. Magnam voluptate excepturi tempora eveniet voluptatum
+					Voluptatem ratione ratione impedit impedit architecto! Velit molestias excepturi voluptas expedita
+					maxime? Molestiae sequi ea eum repellendus dignissimos, ea maxime?</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="proyectos">
+		<h3 class="proyectos--titulo">Proyectos</h3>
+		<div class="proyectos--contenido">
+
+			<div class="proyecto--tarjeta-de-proyecto">
+				<h4>Titulo del proyecto</h4>
+				<p>Elit laudantium eaque fuga amet quas Repellat impedit molestias voluptatibus reiciendis quia Aut ad
+					quod exercitationem ut iusto ad, quae? Laudantium mollitia id officia aut natus. Harum id voluptatum
+					assumenda</p>
+			</div>
+
+			<div class="proyecto--tarjeta-de-proyecto">
+				<h4>Titulo del proyecto</h4>
+				<p>Lorem impedit iusto mollitia vel reprehenderit Praesentium dolores nulla quaerat nemo esse.
+					Voluptates error in culpa.</p>
+			</div>
+
+			<div class="proyecto--tarjeta-de-proyecto">
+				<h4>Titulo del proyecto</h4>
+				<p>Sit velit eum ea architecto exercitationem? In explicabo deleniti ratione laudantium optio. Nostrum
+					perspiciatis aut deleniti ipsam accusamus sit? Nemo reprehenderit dolor veritatis ipsam quas Labore
+					ut voluptate consectetur quibusdam quibusdam. Ducimus temporibus explicabo dignissimos similique
+					recusandae? Eligendi praesentium soluta!</p>
+			</div>
+
+		</div>
+	</section>
+</body>
+
+<footer>
+	<p>Elit deleniti earum ea quas optio beatae obcaecati, accusamus. Accusantium</p>
+</footer>
+</html>

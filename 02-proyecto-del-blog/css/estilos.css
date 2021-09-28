@@ -27,6 +27,7 @@ header{
   font-size: 26pt;
   color: white;
   margin-left: 0.7em;
+  display: inline;
 }
 
 .redes a {
@@ -84,4 +85,11 @@ header .container{
   padding: 0.7rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    background-color: #2A2B2F;
 }
