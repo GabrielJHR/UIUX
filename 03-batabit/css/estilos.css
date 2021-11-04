@@ -1,0 +1,53 @@
+/*
+ * Batabit
+ * 
+ */
+
+/* variables */
+:root{
+  /* colors */
+  --bitcoin-orange: ;
+  --soft-orange: ;
+  --secondary-blue: ;
+  --warm-black: ;
+  --grey: ;
+  --light-grey: #808080;
+  --off-white: #faf8f7 ;
+  --just-white: #fff;
+
+}
+
+
+
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Header */
+header {
+  position: relative;
+  display: flex;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
+  height: 320px;
+}
+
+.header--button {
+  position: absolute;
+  text-align: center;
+  bottom: -17px;
+  padding: 1rem;
+  background-color: white;
+}

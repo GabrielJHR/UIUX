@@ -1,0 +1,99 @@
+/* Proyecto final de la materia Diseño de interfaces de usuario */
+/* Maquetar el diseño de la app YARD Sale */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap');
+
+:root{
+  /* Global variables */
+
+  /* Colors */
+  --very-light-pink : #C7C7C7;
+  --white : #FFF;
+  --text-input-field : #F7F7F7;
+  --black: #000;
+  --hospital-green: #ACD9B2;
+  --dark : #232830;
+}
+
+/* Global styles */
+body{
+  min-height: 100vh;
+}
+
+
+.h1-4-light{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.h1-1-title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 18pt;
+}
+
+.h1-3-price{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18pt;
+}
+
+.h1-2-body{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 18pt;
+}
+
+.h2-body-high-emphasis{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+
+.h2-1-title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  text-align: center;
+}
+
+.h3-3-price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  text-align: center;
+}
+
+.h3-body-low-emphasis{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.h2-2-body{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+.h3-1-title-high-emphasis {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 14pt;
+}
+
+.h3-1-title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 14pt;
+}
+
+.h3-2-body{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+}
