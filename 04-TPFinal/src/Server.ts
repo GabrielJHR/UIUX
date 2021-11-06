@@ -1,6 +1,7 @@
 import express, { Application } from "express";
 import router from "./routes";
 import path from "path/posix";
+const hbs = require('hbs');
 
 class Server{
   private _app : Application;
@@ -32,6 +33,7 @@ class Server{
   }
 
   views(){
+    hbs.registerPartials(path.join(__dirname, '/views/partials'))
     this._app.set("views", path.join(__dirname, 'views'))
     this._app.set('view engine', 'hbs')
   }

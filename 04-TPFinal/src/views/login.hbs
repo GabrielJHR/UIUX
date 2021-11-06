@@ -1,39 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="css/{{stylesheet}}">
-</head>
-<body>
-    <main class="main-container">
-        <div>
-            <div class="close-icon">
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="main-tittle">
-                <img src="assets/logos/logo_yard_sale.svg" alt="logo">
-            </div>
-            <form>
-                <div class="form-main">
-                    <div class="form-group">
-                        <p class="h3-1-title-high-emphasis"><b> Email address</b></p>
-                        <input type="text" placeholder="camilayakoo@gmail.com">
-                    </div>
-                    <div class="form-group">
-                        <p><b>Password</b></p>
-                        <input class="h3-1-title-high-emphasis" type="password" placeholder="**********">
-                    </div>
-                </div>
-                <input class="button-login" type="submit" value="Log in">
-                <div class="link-container">
-                    <a class="link" href="/"><b>Forgot my password</b></a>
-                </div>
-            </form>
+<main class="main-container">
+    <div class="close-icon">
+        <i class="fas fa-times"></i>
+    </div>
+    {{> header_logo}}
+    <form class="main-form">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" type="text" placeholder="Input a valid email">
         </div>
-        <div class="button-signup"><a href="">Sign up</a></div>
-    </main>
-</body>
-</html>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password must be 8-16 characters">
+        </div>
+        <input class="custom-button button-login" type="submit" value="Log in">
+        <a class="link forgot-password" href="/recovery"><b>Forgot my password</b></a>
+    </form>
+    <div class="spacer"></div>
+    <a class="custom-button button-outline" href="/signup">Sign up</a>
+</main>

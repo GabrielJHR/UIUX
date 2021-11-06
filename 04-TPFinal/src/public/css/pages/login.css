@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+
+.button-login{
+    color: var(--white);
+    background-color: var(--hospital-green);
+}
+
+
+.forgot-password{
+    text-align: center;
+    margin: 1em 0;
+    font-weight: 700;
+}

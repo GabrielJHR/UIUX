@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container{
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h1{
+    margin: 2em 0;
+}
+
+form{
+    flex: 1;
+}
+
+form .custom-button{
+    width: 100%;
+}
