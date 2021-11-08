@@ -3,6 +3,10 @@ import HbsParams from "./interfaces/HbsParams";
 
 const router = Router();
 
+router.get('/', (req:Request, res:Response)=>{
+  res.redirect('/login')
+})
+
 router.get('/login', (req : Request, res : Response) => {
   const hbs : HbsParams = {
     title : 'Login',

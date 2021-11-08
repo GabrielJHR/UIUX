@@ -1,6 +1,6 @@
 import hbs from 'hbs'
 
-export default function chargeHelpers() : void{
+export default function loadHelpers() : void{
   hbs.registerHelper('times', timeHelper);
   hbs.registerHelper('randomCart', randomAddCart);
 }

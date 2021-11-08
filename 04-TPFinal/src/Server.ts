@@ -1,7 +1,7 @@
 import express, {Application} from "express";
 import router from "./routes";
 import path from "path/posix";
-import chargeHelpers from "./hbs-helpers";
+import loadHelpers from "./hbs-helpers";
 const hbs = require('hbs');
 
 class Server {
@@ -34,7 +34,7 @@ class Server {
   }
 
   views() {
-    chargeHelpers();
+    loadHelpers();
     hbs.registerPartials(path.join(__dirname, '/views/partials'))
     this._app.set("views", path.join(__dirname, 'views'))
     this._app.set('view engine', 'hbs')
