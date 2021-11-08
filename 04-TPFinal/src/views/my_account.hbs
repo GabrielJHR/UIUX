@@ -1,20 +1,22 @@
-{{>navbar}}
-<div class="main-container">
-    <h1 class="h1-1-title">My account</h1>
-    <form class"main-form">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" placeholder="Input your full name" type="text">
-        </div>
-        <div class="form-group">
-            <label for="email">Email address</label>
-            <input id="email" placeholder="Input a valid email" type="email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password" type="password"placeholder="Password must be 8-16 characters" >
-        </div>
-        <div class="spacer"></div>
-        <input type="submit" class="custom-button button-green" value="Create Account">
-    </form>
+<div class="full-height-container main-container">
+    {{>navbar}}
+    <h1 class="h1-1-title main-title">My account</h1>
+    
+        <form class="main-form signup-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" placeholder="Input your full name" type="text">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input id="email" placeholder="Input a valid email" type="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" type="password"placeholder="Password must be 8-16 characters" >
+            </div>
+            <div class="spacer"></div>
+            <input type="submit" class="custom-button button-green" value="Create Account">
+        </form>
+
 </div>

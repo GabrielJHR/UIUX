@@ -34,4 +34,14 @@ router.get('/signup', (req : Request, res : Response) => {
   })
 })
 
+router.get('/products', (req : Request, res : Response) => {
+  const hbs : HbsParams = {
+    title : 'Products',
+    stylesheet : 'products.css'
+  }
+  res.render('products', {
+    hbs
+  })
+})
+
 export default router;

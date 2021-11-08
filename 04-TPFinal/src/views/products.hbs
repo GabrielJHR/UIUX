@@ -1,0 +1,27 @@
+{{> navbar}}
+<div class="main-container">
+    <div class="icon-input">
+        <i class="fi fi-rr-search icon-input__icon"></i>
+        <input class="icon-input__input" type="text" placeholder="Search product">
+    </div>
+
+    <section class="products">
+    {{#times 10}}
+        <div class="card-product">
+            <img class="card-product__image" src="https://picsum.photos/400">
+            <div class="card-product__body">
+                <h3 class="h3-3-price card-product__body-price">
+                    $ 120,00
+                </h3>
+                <h4 class="card-product__body-title h3-1-title">
+                    Amet porro ipsum animi debitis.
+                </h4>
+                <div class="card-product__body-icon">
+                    <img src="assets/icons/{{randomCart}}" alt="">
+                </div>
+            </div>
+        </div>
+    {{/times}}
+    </section>
+
+</div>

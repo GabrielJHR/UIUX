@@ -1,7 +1,4 @@
 <main class="main-container">
-    <div class="close-icon">
-        <i class="fas fa-times"></i>
-    </div>
     {{> header_logo}}
     <form class="main-form">
         <div class="form-group">
@@ -12,8 +9,8 @@
             <label for="password">Password</label>
             <input id="password" type="password" placeholder="Password must be 8-16 characters">
         </div>
-        <input class="custom-button button-login" type="submit" value="Log in">
-        <a class="link forgot-password" href="/recovery"><b>Forgot my password</b></a>
+        <a class="custom-button main-form__button-login" href="/products">Login</a>
+        <a class="link main-form__forgot-password" href="/recovery"><b>Forgot my password</b></a>
     </form>
     <div class="spacer"></div>
     <a class="custom-button button-outline" href="/signup">Sign up</a>

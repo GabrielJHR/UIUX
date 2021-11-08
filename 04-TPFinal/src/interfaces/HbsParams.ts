@@ -1,4 +1,4 @@
-export default interface HbsParams{
-  title : string;
-  stylesheet : string;
+export default interface HbsParams {
+  title: string;
+  stylesheet: string;
 }
