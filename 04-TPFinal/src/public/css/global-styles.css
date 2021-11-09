@@ -28,6 +28,12 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+.container {
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* Text Syles */
 .h1-4-light{
   font-family: 'Quicksand', sans-serif;
@@ -107,7 +113,6 @@ body {
 
 .full-height-container{
   height: 100vh;
-  box-sizing: border-box;
 }
 
 .header-logo{
@@ -234,7 +239,10 @@ body {
 
 /* NAVBAR */
 .navbar{
+  position: -webkit-sticky;
   position: sticky;
+  top: 0px;
+  background-color: var(--white);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -242,3 +250,56 @@ body {
   padding: 1em;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .container {
+    width: 85vw;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 78vw;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* // X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... } */

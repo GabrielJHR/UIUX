@@ -1,12 +1,78 @@
 .main-container{
-    padding: 1.5em;
+    margin-top: 1.5em;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 }
 
+.categories {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.categories__list{
+    padding: 0 1em;
+    display: flex;    
+    align-items: center;
+    overflow-x: auto;
+}
+
+.categories__list::-webkit-scrollbar{display: none;}
+
+.categories__list-item {
+    list-style: none;
+    padding: 0.4em;
+    border-radius: 10px;
+    margin: 0 0.3em;
+    flex-shrink:0;
+}
+
+.categories__list-item-link{
+    color: var(--grey);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.categories__list-item--active{
+    border: 2px solid var(--hospital-green);
+}
+.categories__list-item--active a{
+    color: var(--hospital-green);
+}
+
+.custom-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-select > label{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.custom-select__select{
+    display: flex;
+}
+
+.custom-select__select > select {
+    color: var(--grey);
+    padding: 0.3em;
+    font-size: 15px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+select:focus{ outline: none;}
+
 .products {
---auto-grid-min-size: 10rem;
+--auto-grid-min-size: 200px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 1rem

@@ -1,11 +1,43 @@
 {{> navbar}}
 <div class="main-container">
-    <div class="icon-input">
-        <i class="fi fi-rr-search icon-input__icon"></i>
-        <input class="icon-input__input" type="text" placeholder="Search product">
+
+    <div class="container">
+        <div class="icon-input">
+            <i class="fi fi-rr-search icon-input__icon"></i>
+            <input class="icon-input__input" type="text" placeholder="Search product">
+        </div>
     </div>
 
-    <section class="products">
+    <div class="categories">
+        <ul class="categories__list">
+            <li class="categories__list-item categories__list-item--active"><a class="categories__list-item-link" href="">All</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Clothes</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Electronics</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Forniture</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Consectetur</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Elit</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Dolor</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Ipsum</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Amet</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Sit</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Quod</a></li>
+            <li class="categories__list-item"><a class="categories__list-item-link" href="">Adipisicing</a></li>
+        </ul>
+    </div>
+
+    <div class="custom-select">
+        <label for="order">Order: </label>
+        <div class="custom-select__select">
+            <div class="icon"></div>
+            <select id="order" name="order">
+                <option value="" selected>Most recent</option>
+                <option value="">Most popular</option>
+                <option value="">Best price</option>
+            </select>
+        </div>
+    </div>
+
+    <section class="products container">
     {{#times 10}}
         <div class="card-product">
             <img class="card-product__image" src="https://picsum.photos/400">

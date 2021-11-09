@@ -1,9 +1,11 @@
 .main-container{
     display: flex;
+    margin: auto;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    max-width: 500px;
     padding: 1.5em;
     box-sizing: border-box;
 }

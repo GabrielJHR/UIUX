@@ -2,7 +2,7 @@ import express, {Application} from "express";
 import router from "./routes";
 import path from "path/posix";
 import loadHelpers from "./hbs-helpers";
-const hbs = require('hbs');
+import hbs from 'hbs'
 
 class Server {
   private _app: Application;
